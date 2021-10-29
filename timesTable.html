@@ -23,7 +23,14 @@
             for (t = 0; t < 11; t++) {
                 var cell = document.createElement("td");
 
-
+                if (t == 0 && i == 0) {
+                    var cellTxt = document.createTextNode("x");
+                    cell.id = "pink";
+                }
+                else if (t == 0) { var cellTxt = document.createTextNode(i); cell.id = "red"; }
+                else if (i == 0) { var cellTxt = document.createTextNode(t); cell.id = "blue"; }
+                else if (t == i) { var cellTxt = document.createTextNode(t * i); cell.id = "green"; }
+                else { var cellTxt = document.createTextNode(t * i); }
                 cell.appendChild(cellTxt);
                 row.appendChild(cell)
 
