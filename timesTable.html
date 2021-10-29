@@ -13,10 +13,17 @@
 
     <script>
         var body = document.getElementsByTagName("body")[0];
-
         var table = document.createElement("table");
         var tbody = document.createElement("tbody");
 
+        for (i = 0; i < 11; i++) {
+
+            var row = document.createElement("tr");
+
+
+            tbody.appendChild(row);
+        }
+        table.appendChild(tbody);
 
         table.appendChild(tbody);
         // appends <table> into <body>
