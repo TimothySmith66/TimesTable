@@ -20,7 +20,17 @@
 
             var row = document.createElement("tr");
 
+            for (t = 0; t < 11; t++) {
+                var cell = document.createElement("td");
 
+
+                cell.appendChild(cellTxt);
+                row.appendChild(cell)
+
+
+
+
+            }
             tbody.appendChild(row);
         }
         table.appendChild(tbody);
