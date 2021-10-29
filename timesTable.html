@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimesTable</title>
+
+</head>
+
+<body>
+
+    <script>
+        var body = document.getElementsByTagName("body")[0];
+
+        var table = document.createElement("table");
+        var tbody = document.createElement("tbody");
+
+
+        table.appendChild(tbody);
+        // appends <table> into <body>
+        body.appendChild(table);
+        // sets the border attribute of table to 2;
+        table.setAttribute("border", "2");
+
+    </script>
+</body>
+
+</html>
